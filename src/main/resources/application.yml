@@ -10,7 +10,3 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: https://accounts.google.com
-camel:
-    servlet:
-      mapping:
-        context-path: /rest/*
