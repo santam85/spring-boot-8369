@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: <YOURCLIENTID>
+            client-secret: <YOURCLIENTSECRED>
+            redirect-uri: "{baseUrl}/oauth2/code/{registrationId}"
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
+camel:
+    servlet:
+      mapping:
+        context-path: /rest/*
